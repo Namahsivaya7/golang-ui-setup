@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -14,8 +13,11 @@ export default defineConfig({
     }),
   ],
   server: {
-     host: '0.0.0.0',
-    allowedHosts: ['https://golang-ui-setup.onrender.com'],
+    host: '0.0.0.0',
+    allowedHosts: [
+      'golang-ui-setup.onrender.com', // ✅ hostname only
+      'localhost',                    // optional for local dev
+    ],
     port: 5173,
   },
 });
