@@ -746,6 +746,7 @@ export default function Dashboard() {
                 {users.map((user) => (
                   <Card key={user.ID}>
                     <CardContent className="p-4">
+                      <p>User Id: {user.ID}</p>
                       <p>
                         <strong>Email:</strong> {user.email}
                       </p>
