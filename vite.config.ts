@@ -14,7 +14,8 @@ export default defineConfig({
     }),
   ],
   server: {
-    host: true, // binds to 0.0.0.0
+     host: '0.0.0.0',
+    allowedHosts: ['golang-ui-setup.onrender.com'],
     port: 5173,
   },
 });
