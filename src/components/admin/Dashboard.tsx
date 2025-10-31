@@ -730,7 +730,7 @@ export default function Dashboard() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      className="w-full bg-blue-600 hover:bg-blue-700 !text-black"
                     >
                       Send Verification Link
                     </Button>
